@@ -242,7 +242,7 @@ namespace WPFOperator.Views
                     {
                         string item = (string)ComboFilter.SelectedItem;
                         DateTime selectedDate = new DateTime(Year, Month, Day);
-                        foreach (CardObject CO in MVM.Employer.Cards)
+                        foreach (CardObject CO in MVM.Employer.HandledCards)
                         {
                             if (CO.IsAddedBetween(dateTimeBegin, dateTimeEnd))
                             {
